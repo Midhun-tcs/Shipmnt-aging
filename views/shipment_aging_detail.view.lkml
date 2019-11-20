@@ -173,6 +173,6 @@ view: shipment_aging_detail {
   measure: units {
     type: sum
     sql: ${__units} ;;
-    drill_fields: [location.sub_region_description,location.district_description,location.fullfillment_location,reservation_number,units]
+    drill_fields: [location.division_name,location.sub_region_description,location.district_description,location.fullfillment_location,reservation_number,shipment_number,units]
 }
 }
