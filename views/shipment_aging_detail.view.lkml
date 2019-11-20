@@ -170,8 +170,9 @@ view: shipment_aging_detail {
     sql: ${TABLE}.Status_Date ;;
   }
 
-  measure: count {
-    type: count
-    drill_fields: []
-  }
+  measure: units {
+    type: sum
+    sql: ${__units} ;;
+    drill_fields: [location.sub_region_description,location.district_description,location.fulfillment_location,units]
+}
 }
