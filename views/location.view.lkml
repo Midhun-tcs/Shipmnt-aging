@@ -18,6 +18,7 @@ view: location {
 
   dimension: loc_sk {
     type: number
+    primary_key: yes
     sql: ${TABLE}.Loc_SK ;;
   }
 
