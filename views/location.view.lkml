@@ -31,7 +31,7 @@ view: location {
     sql: ${TABLE}.locn_nm ;;
   }
   dimension: divn_nbr {
-    type: string
+    type: number
     sql: ${TABLE}.divn_nbr ;;
   }
   dimension: divn_abbr {
@@ -43,15 +43,15 @@ view: location {
     sql: ${TABLE}.oper_divn_nm ;;
   }
   dimension: zl_divn_nbr {
-    type: string
+    type: number
     sql: ${TABLE}.zl_divn_nbr ;;
   }
   dimension: zl_str_nbr {
-    type: string
+    type: number
     sql: ${TABLE}.zl_str_nbr ;;
   }
   dimension: locn_nbr {
-    type: string
+    type: number
     sql: ${TABLE}.locn_nbr ;;
   }
   dimension: state_cd {
@@ -64,11 +64,11 @@ view: location {
     sql: ${TABLE}.sub_rgn_id ;;
   }
   dimension: max_picks {
-    type: string
+    type: number
     sql: ${TABLE}.max_picks ;;
   }
   dimension: ops_max_picks {
-    type: string
+    type: number
     sql: ${TABLE}.ops_max_picks ;;
   }
   measure: count {
