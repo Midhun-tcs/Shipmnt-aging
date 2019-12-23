@@ -56,6 +56,7 @@ view: location {
   }
   dimension: state_cd {
     type: string
+    map_layer_name: us_states
     sql: ${TABLE}.state_cd ;;
   }
   dimension: sub_rgn_id {
